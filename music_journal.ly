@@ -28,5 +28,9 @@ over e major 2 - 5 - 1
 }
 
 \markup {
-  Autumn Leaves
+  02/01/13 --woke up with this in my head
+}
+
+\relative c' {
+  g4 e8 c f d r4 | f4 d8 b e c r4 | g2
 }
