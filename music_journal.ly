@@ -34,3 +34,18 @@ over e major 2 - 5 - 1
 \relative c' {
   g4 e8 c f d r4 | f4 d8 b e c r4 | g2
 }
+
+\markup {
+   Wayne's Thang Bass Line
+   1 5 4 7
+   Em7 x 4
+   Cmaj7#11 x 4
+   B7Alt x 4
+   Em7 x 2 Cmaj7#11 x 1 B7Alt x 1
+}
+
+\relative c' {
+   e4 r8 b8 a4 d | 
+   c4 r8 b8 a4 d | 
+   b4 r8 b8 a4 c              
+}
