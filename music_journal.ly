@@ -49,3 +49,26 @@ over e major 2 - 5 - 1
    c4 r8 b8 a4 d | 
    b4 r8 b8 a4 c              
 }
+
+\markup {
+  09/01/13 --half-diminished and diminished arpeggios on minor 2-5
+}
+
+\relative c' {
+  r8 a8 c a fis a c e | dis c a fis a c dis c | b4 
+}
+
+
+\markup {
+  Central Park West
+  3-2-5               Db
+  1-2-3-3 5-5-3       Bb - G
+  3-2-5               Db   
+  3-2-3   6-5-3-2  1-2-3  7-5-3-2 Db
+
+  Pentatonics
+}
+
+\relative c' {
+  aes4 bes c ees f | fis ees cis b aes | a c d f g | fis e d b a |  
+}
