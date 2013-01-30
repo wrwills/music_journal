@@ -2,6 +2,8 @@
   title = "Notes and Ideas"
 }
 
+\version "2.16.2"
+
 \markup {
   Pentatonic Fourths -- Geometry of Music
 }
@@ -39,9 +41,9 @@ over e major 2 - 5 - 1
    Wayne's Thang Bass Line
    1 5 4 7
    Em7 x 4
-   Cmaj7#11 x 4
+   Cmaj7sharp11 x 4
    B7Alt x 4
-   Em7 x 2 Cmaj7#11 x 1 B7Alt x 1
+   Em7 x 2 Cmaj7sharp11 x 1 B7Alt x 1
 }
 
 \relative c' {
@@ -70,5 +72,6 @@ over e major 2 - 5 - 1
 }
 
 \relative c' {
+  \time 5/4 
   aes4 bes c ees f | fis ees cis b aes | a c d f g | fis e d b a |  
 }
