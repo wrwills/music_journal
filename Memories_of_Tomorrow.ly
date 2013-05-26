@@ -29,7 +29,8 @@
     }
 
 
-AvoiceAA = \relative c'{
+AvoiceAA = \transpose c d 
+\relative c'{
     \set Staff.instrumentName = #""
     \set Staff.shortInstrumentName = #""
     \clef treble
@@ -70,7 +71,7 @@ AvoiceAA = \relative c'{
 
  
 
-AvoiceBA = \relative c'{
+AvoiceBA = \transpose c d \relative c'{
     \set Staff.instrumentName = #""
     \set Staff.shortInstrumentName = #""
     \clef treble
@@ -93,7 +94,7 @@ AvoiceBA = \relative c'{
     aes,8 bes 
 }% end of last bar in partorvoice
 
-theChords = \chordmode { 
+theChords = \transpose c d \chordmode { 
         a1:m a:m7+ a:m7 e:m7
         f2 fis2:dim c1/g g:7sus4 c1 
         d/fis f:maj7 c/e ees2 a2:7 
