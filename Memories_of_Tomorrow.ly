@@ -72,8 +72,27 @@ AvoiceBA = \transpose c c \relative c'{
     f, g a bes c d e f | % 10
     c,8 d e f g a b c      | % 11
     ees,16 f g aes bes c d ees a, b cis d e fis g a | %12
-    aes,8 bes 
+    aes,8 bes c d ees f g aes | 
+    f, g aes bes c d ees f |
+    bes, c d ees f g aes bes |
+    c, d e f g a b c |
+    
 }% end of last bar in partorvoice
+
+AvoiceCA = \transpose c c \relative c'{
+    \set Staff.instrumentName = #""
+    \set Staff.shortInstrumentName = #""
+    \clef treble
+    %staffkeysig
+    \key c \major 
+    %bartimesig: 
+    \time 4/4 
+    r1 r r r f2 fis g1 r r
+    fis f e ees2 cis c1  r r 
+    << c' e >> << d1 \\ {b2 bes } >> << c1 \\ { a2 aes } >> 
+    << b2 g2 >> << fis c' >> << c1 f,1 >>
+    r r r r
+}
 
 theChords = \transpose c c \chordmode { 
         a1:m a:m7+ a:m7 e:m7
@@ -96,6 +115,9 @@ theChords = \transpose c c \chordmode {
             \context Voice = AvoiceBA \AvoiceBA
         >>
 
+        \context Staff = ApartC << 
+            \context Voice = AvoiceCA \AvoiceCA
+        >>
 
 
 

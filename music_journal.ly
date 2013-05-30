@@ -75,3 +75,8 @@ over e major 2 - 5 - 1
   \time 5/4 
   aes4 bes c ees f | fis ees cis b aes | a c d f g | fis e d b a |  
 }
+
+
+c d e g e f g f e d
+
+1 3 4 5 3 4 5 4 3 2
