@@ -6,30 +6,13 @@
 \version "2.12.0"
 
 
-
-#(set-default-paper-size "letter")
-
-\paper {
-  line-width    = 195.9\mm
-  left-margin   = 10\mm
-  top-margin    = 10\mm
-  bottom-margin = 20\mm
-  %%indent = 0 \mm 
-  %%set to ##t if your score is less than one page: 
-  ragged-last-bottom = ##t 
-  ragged-bottom = ##f  
-  %% in orchestral scores you probably want the two bold slashes 
-  %% separating the systems: so uncomment the following line: 
-  %% system-separator-markup = \slashSeparator 
-  }
-
 \header {
     title = "Memories of Tomorrow"
     composer = "Keith Jarrett"
     }
 
 
-AvoiceAA = \transpose c d 
+AvoiceAA = \transpose c c
 \relative c'{
     \set Staff.instrumentName = #""
     \set Staff.shortInstrumentName = #""
@@ -69,9 +52,7 @@ AvoiceAA = \transpose c d
     e2. r4 | % 24
 }% end of last bar in partorvoice
 
- 
-
-AvoiceBA = \transpose c d \relative c'{
+AvoiceBA = \transpose c c \relative c'{
     \set Staff.instrumentName = #""
     \set Staff.shortInstrumentName = #""
     \clef treble
@@ -79,12 +60,12 @@ AvoiceBA = \transpose c d \relative c'{
     \key c \major 
     %bartimesig: 
     \time 4/4 
-    a'8 b c d e fis g a     | % 1
-    a, b c d e fis gis a      | % 2
-    a, b c d e fis g a      | % 3
-    e, fis g a b c d e      | % 4
-    f, fis gis a b c d dis  | % 5
-    c,4. d4. e4~      | % 6
+    a'8^\markup{ A Dorian } b c d e fis g a     | % 1
+    a,^\markup{ A melodic minor } b c d e fis gis a      | % 2
+    a,^\markup{ A Dorian } b c d e fis g a      | % 3
+    e,^\markup{ E Aeolian } fis g a b c d e     | % 4
+    f,^\markup{ F Symmetric Diminished } fis gis a b c d dis  | % 5
+    c,4. d4.^\markup{ C Major Scale } e4~      | % 6
     e8 f4. g4. a8~      | % 7
     a4 b4. c4.      | % 8
     d,8 e fis g a b c d  | % 9
@@ -94,7 +75,7 @@ AvoiceBA = \transpose c d \relative c'{
     aes,8 bes 
 }% end of last bar in partorvoice
 
-theChords = \transpose c d \chordmode { 
+theChords = \transpose c c \chordmode { 
         a1:m a:m7+ a:m7 e:m7
         f2 fis2:dim c1/g g:7sus4 c1 
         d/fis f:maj7 c/e ees2 a2:7 
