@@ -65,7 +65,7 @@ AvoiceBA = \transpose c c \relative c'{
     a4 b4. c4.      | % 8
     \break
     d,8^\markup{ D Mixolydian to match C natural }_\markup{ 
-      \magnify #0.6 { 
+      \magnify #0.5 { 
         \column { 
           \line {Only one note in the scale needs to change from}  
           \line {the previous scale and this note is the guide tone } } } }
@@ -75,9 +75,15 @@ AvoiceBA = \transpose c c \relative c'{
     ees,16^\markup{ Eb Major } f g aes bes c d ees a,^\markup{ A Mixolydian } b cis d e fis g a | %12
     aes,8^\markup{ Common scales Ab Ionian and F Aeolian } bes c des ees f g aes | 
     f, g aes bes c des ees f |
-    bes, c d ees f g aes bes |
-    c,, d e f g a b c |
-    b,16 c d e fis g a b bes, c d ees f g aes bes |
+    bes,^\markup{ Bb Mixolydian }
+    _\markup { 
+      \magnify #0.5 { 
+        \column { 
+          \line { Could probably also get away with a Bb Dorian because it is a sus4 chord }
+          \line { This would make for common scale with last two bars } } } }
+    c d ees f g aes bes |
+    c,,^\markup{ C Major } d e f g a b c |
+    b,16^\markup{ B Phrygian } c d e fis g a b bes,^\markup{ Bb Lydian b7 } c d e f g aes bes |
     a^\markup{ A Locrian } bes c d e f g a f,^\markup{ F Melodic Minor }  g aes bes c d e f |
     g,^\markup{ G Major Scale (Common Scale G Ionian and D Mixolydian) } a b c d e fis g d,^\markup{ D Mixolydian } e fis g a b c d |
     f,8^\markup{ F Lydian Scale } g a b c d e f |
