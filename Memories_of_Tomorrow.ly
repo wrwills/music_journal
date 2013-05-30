@@ -70,17 +70,17 @@ AvoiceBA = \transpose c c \relative c'{
           \line {Only one note in the scale needs to change from}  
           \line {the previous scale and this note is the guide tone } } } }
     e fis g a b c d  | % 9
-    f,^\markup{ F Lydian } g a b c d e f | % 10
-    c,8^\markup{ C Major } d e f g a b c      | % 11
+    f,^\markup{ Common Scales: F Lydian & C Major} g a b c d e f | % 10
+    c,8 d e f g a b c      | % 11
     ees,16^\markup{ Eb Major } f g aes bes c d ees a,^\markup{ A Mixolydian } b cis d e fis g a | %12
-    aes,8^\markup{ Common scales Ab Ionian and F Aeolian } bes c des ees f g aes | 
-    f, g aes bes c des ees f |
+    aes,8^\markup{ Common scales Ab Lydian and F Dorian and Bb Mixolydian } bes c d ees f g aes | 
+    f, g aes bes c d ees f |
     bes,^\markup{ Bb Mixolydian }
     _\markup { 
       \magnify #0.5 { 
         \column { 
           \line { Could probably also get away with a Bb Dorian because it is a sus4 chord }
-          \line { This would make for common scale with last two bars } } } }
+          \line { This would make for common scale with last two bars if they were thought of as in the key of Ab } } } }
     c d ees f g aes bes |
     c,,^\markup{ C Major } d e f g a b c |
     b,16^\markup{ B Phrygian } c d e fis g a b bes,^\markup{ Bb Lydian b7 } c d e f g aes bes |
