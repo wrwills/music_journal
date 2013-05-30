@@ -25,27 +25,22 @@ AvoiceAA = \transpose c c
     e c~ c2.      | % 2
     c'4 b8 a~ a g4 g8~      | % 3
     g2 e4 g      | % 4
-    \break
     c b8 a~ a4 g      | % 5
     e8 c4. a4 c      | % 6
     f e8 d~ d4 c8 e~      | % 7
     e2 a4 c      | % 8
-    \break
     d d8 d~ d4 a      | % 9
     d c r8 b4 a8      | % 10
     c4 b a g8 g~      | % 11
     g2 g4 g      | % 12
-    \break
     g g f c8 f~      | % 13
     f g4. c,4 ees      | % 14
     f g8 f~ f c4 e8~      | % 15
     e2 e4 e      | % 16
-    \break
     e b'8 e~ e e4 d8~      | % 17
     d4 a8 c~ c4. c8      | % 18
     b4 a8 d~ d c4 a8~      | % 19
     a c4. c,4 f      | % 20
-    \break
     e2 e4 c      | % 21
     f e d c      | % 22
     e1~ | % 23
@@ -68,12 +63,18 @@ AvoiceBA = \transpose c c \relative c'{
     c,4. d4.^\markup{ C Major Scale Common Scale (C Ionian and G Mixolydian) } e4~      | % 6
     e8 f4. g4. a8~      | % 7
     a4 b4. c4.      | % 8
-    d,8^\markup{ D Mixolydian to match C natural }_\markup{ Only one note in the scale needs to change frome the previous scale and that this is note is the guide tone }  e fis g a b c d  | % 9
+    \break
+    d,8^\markup{ D Mixolydian to match C natural }_\markup{ 
+      \magnify #0.6 { 
+        \column { 
+          \line {Only one note in the scale needs to change from}  
+          \line {the previous scale and this note is the guide tone } } } }
+    e fis g a b c d  | % 9
     f,^\markup{ F Lydian } g a b c d e f | % 10
     c,8^\markup{ C Major } d e f g a b c      | % 11
     ees,16^\markup{ Eb Major } f g aes bes c d ees a,^\markup{ A Mixolydian } b cis d e fis g a | %12
-    aes,8 bes c d ees f g aes | 
-    f, g aes bes c d ees f |
+    aes,8^\markup{ Common scales Ab Ionian and F Aeolian } bes c des ees f g aes | 
+    f, g aes bes c des ees f |
     bes, c d ees f g aes bes |
     c,, d e f g a b c |
     b,16 c d e fis g a b bes, c d ees f g aes bes |
