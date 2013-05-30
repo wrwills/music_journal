@@ -62,21 +62,26 @@ AvoiceBA = \transpose c c \relative c'{
     \time 4/4 
     a'8^\markup{ A Dorian } b c d e fis g a     | % 1
     a,^\markup{ A melodic minor } b c d e fis gis a      | % 2
-    a,^\markup{ A Dorian } b c d e fis g a      | % 3
+    a,^\markup{ A Dorian } b c d e fis^\markup{ Common scales } g a      | % 3
     e,^\markup{ E Aeolian } fis g a b c d e     | % 4
     f,^\markup{ F Symmetric Diminished } fis gis a b c d dis  | % 5
-    c,4. d4.^\markup{ C Major Scale } e4~      | % 6
+    c,4. d4.^\markup{ C Major Scale Common Scale (C Ionian and G Mixolydian) } e4~      | % 6
     e8 f4. g4. a8~      | % 7
     a4 b4. c4.      | % 8
-    d,8 e fis g a b c d  | % 9
-    f, g a bes c d e f | % 10
-    c,8 d e f g a b c      | % 11
-    ees,16 f g aes bes c d ees a, b cis d e fis g a | %12
+    d,8^\markup{ D Mixolydian to match C natural }_\markup{ Only one note in the scale needs to change frome the previous scale and that this is note is the guide tone }  e fis g a b c d  | % 9
+    f,^\markup{ F Lydian } g a b c d e f | % 10
+    c,8^\markup{ C Major } d e f g a b c      | % 11
+    ees,16^\markup{ Eb Major } f g aes bes c d ees a,^\markup{ A Mixolydian } b cis d e fis g a | %12
     aes,8 bes c d ees f g aes | 
     f, g aes bes c d ees f |
     bes, c d ees f g aes bes |
-    c, d e f g a b c |
-    
+    c,, d e f g a b c |
+    b,16 c d e fis g a b bes, c d ees f g aes bes |
+    a^\markup{ A Locrian } bes c d e f g a f,^\markup{ F Melodic Minor }  g aes bes c d e f |
+    g,^\markup{ G Major Scale (Common Scale G Ionian and D Mixolydian) } a b c d e fis g d,^\markup{ D Mixolydian } e fis g a b c d |
+    f,8^\markup{ F Lydian Scale } g a b c d e f |
+    c,2^\markup{ C Major Common Scale (C Ionian and G Mixolydian) } d e f g a b 
+    bes,16^\markup{ Bb Mixolydian } c d ees f g aes bes
 }% end of last bar in partorvoice
 
 AvoiceCA = \transpose c c \relative c'{
@@ -91,7 +96,7 @@ AvoiceCA = \transpose c c \relative c'{
     fis f e ees2 cis c1  r r 
     << c' e >> << d1 \\ {b2 bes } >> << c1 \\ { a2 aes } >> 
     << b2 g2 >> << fis c' >> << c1 f,1 >>
-    r r r r
+    g f e d
 }
 
 theChords = \transpose c c \chordmode { 
