@@ -80,3 +80,9 @@ over e major 2 - 5 - 1
 c d e g e f g f e d
 
 1 3 4 5 3 4 5 4 3 2
+
+
+\markup {
+http://www.mattwarnockguitar.com/the-1-lick-every-jazz-guitarist-needs-to-know
+http://www.mattwarnockguitar.com/5-must-know-minor-ii-v-i-licks-for-jazz-guitar
+}
